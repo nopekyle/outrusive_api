@@ -105,7 +105,7 @@ namespace outrusive.Controllers
 
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 
-            var token = new JwtSecurityToken(claims: claims, signingCredentials: creds);
+            var token = new JwtSecurityToken(claims: claims, signingCredentials: creds, expires: DateTime.Now.AddYears(1));
 
             var jwt = new JwtSecurityTokenHandler().WriteToken(token);
 

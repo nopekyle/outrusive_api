@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using outrusive.Data;
 using outrusive.Models;
@@ -17,7 +18,7 @@ namespace outrusive.Controllers
             _dataContext = dataContext;
         }
 
-        [HttpGet]
+        [HttpGet, Authorize]
         public async Task<ActionResult> GetReflections(string request) 
         {
             List<Reflection> thoughts = await _dataContext.Reflections.Where(u => u.UserId == request).OrderByDescending(d => d.DateCreated).ToListAsync();
@@ -31,7 +32,7 @@ namespace outrusive.Controllers
             }
         }
 
-        [HttpPost]
+        [HttpPost, Authorize]
         public async Task<ActionResult> PostReflections(Reflection request)
         {
             try

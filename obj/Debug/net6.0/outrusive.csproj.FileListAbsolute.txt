@@ -86,3 +86,8 @@ C:\Users\noble\source\repos\outrusive\obj\Debug\net6.0\refint\outrusive.dll
 C:\Users\noble\source\repos\outrusive\obj\Debug\net6.0\outrusive.pdb
 C:\Users\noble\source\repos\outrusive\obj\Debug\net6.0\outrusive.genruntimeconfig.cache
 C:\Users\noble\source\repos\outrusive\obj\Debug\net6.0\ref\outrusive.dll
+C:\Users\noble\source\repos\outrusive\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\noble\source\repos\outrusive\bin\Debug\net6.0\Scrutor.dll
+C:\Users\noble\source\repos\outrusive\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\noble\source\repos\outrusive\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\noble\source\repos\outrusive\bin\Debug\net6.0\Newtonsoft.Json.dll
